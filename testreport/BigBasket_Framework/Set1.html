@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 16 21:36:51 IST 2017</td>
+<td>Started on:</td><td>Fri Jun 16 22:27:24 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (823 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24028 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke </td>
 </tr><tr>
@@ -76,32 +76,46 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Scenario_Component.Scenario_Cart.testAddCart()'><b>testAddCart</b><br>Test class: Scenario_Component.Scenario_Cart<br>Parameters: {=, Execute_Flag=N, TC_ID=GB_05, Script_name=AddCart, Search_Item=Raw Mango - Diced, Quantity=1.0, Exp_Result=Raw Mango - Diced, Order_Set=1.0}</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 172 milliseconds
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 49 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;Namratas-MacBook-Air.local&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.2&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.bigbasket.mobileapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC53LYF83057, platform=LINUX, appActivity=com.bigbasket.mobileapp.activity.SplashActivity, desired={appPackage=com.bigbasket.mobileapp, appActivity=com.bigbasket.mobileapp.activity.SplashActivity, platformVersion=4.4.4, platformName=Android, deviceName=HTC Desire 820s dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: bc0f0416-a7a4-4359-90d0-5d4c2c8634cc
+*** Element info: {Using=id, value=com.bigbasket.mobileapp:id/btnAddToBasket}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:160)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:168)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:69)
-	at Generic_Component.Base_Class.Launch_App(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at PageObject_Component.PageObject_Cart.Click_AddCart(Unknown Source)
 	at Scenario_Component.Scenario_Cart.testAddCart(Unknown Source)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2084559714", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2084559714'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 172 milliseconds
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1783083399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1783083399'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 49 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
 System info: host: &apos;Namratas-MacBook-Air.local&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.2&apos;, java.version: &apos;1.8.0_121&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.bigbasket.mobileapp, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=LC53LYF83057, platform=LINUX, appActivity=com.bigbasket.mobileapp.activity.SplashActivity, desired={appPackage=com.bigbasket.mobileapp, appActivity=com.bigbasket.mobileapp.activity.SplashActivity, platformVersion=4.4.4, platformName=Android, deviceName=HTC Desire 820s dual sim}, platformVersion=4.4.4, webStorageEnabled=false, locationContextEnabled=false, browserName=Android, takesScreenshot=true, javascriptEnabled=true, platformName=Android}]
+Session ID: bc0f0416-a7a4-4359-90d0-5d4c2c8634cc
+*** Element info: {Using=id, value=com.bigbasket.mobileapp:id/btnAddToBasket}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,14 +126,20 @@ Driver info: io.appium.java_client.android.AndroidDriver
 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:160)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:168)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:69)
-	at Generic_Component.Base_Class.Launch_App(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at PageObject_Component.PageObject_Cart.Click_AddCart(Unknown Source)
 	at Scenario_Component.Scenario_Cart.testAddCart(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -145,7 +165,7 @@ Driver info: io.appium.java_client.android.AndroidDriver
 	at org.testng.TestNG.privateMain(TestNG.java:1338)
 	at org.testng.TestNG.main(TestNG.java:1307)
 </pre></div></td>
-<td>0</td>
+<td>23</td>
 <td>Scenario_Component.Scenario_Cart@370736d9</td></tr>
 </table><p>
 </body>
